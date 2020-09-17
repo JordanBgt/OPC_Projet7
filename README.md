@@ -61,3 +61,20 @@ Respecter les bonnes pratiques de développement en vigueur
 * Chaque composant a un cycle de développement qui lui est propre.
 * Une architecture n-tiers est mise en oeuvre.
 * Le patron de conception ‘Inversion de contrôle’ est mis en oeuvre.
+
+## Exécution de l'application en local 
+
+- Exécution de [Library-api](https://github.com/JordanBgt/OPC_Projet7/blob/master/Library-api/README.md)
+- Exécution de [Library-client](https://github.com/JordanBgt/OPC_Projet7/blob/master/Library-client/README.md)
+- Exécution de [Library-batch](https://github.com/JordanBgt/OPC_Projet7/blob/master/Library-batch/README.md)
+
+Pour que l'application soit fontionnelle, il faut au moins avoir lancé `Library-api` et `Library-client`.
+L'application est ensuite accessible à l'adresse suivante : `http://localhost:8081` (sauf si vous avez modifié les ports dans les propriétés)
+
+### Utilisateurs enregistrés :
+
+| Username | Password | Rôle  |
+|----------|----------|-------|
+| admin    | admin    | admin |
+| user1    | user1    | user  |
+| user2    | user2    | user  |
