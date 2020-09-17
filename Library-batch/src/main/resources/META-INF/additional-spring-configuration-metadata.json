@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "app.periodicityCron",
+      "type": "java.lang.String",
+      "description": "Description for app.periodicityCron."
+  }
+] }
