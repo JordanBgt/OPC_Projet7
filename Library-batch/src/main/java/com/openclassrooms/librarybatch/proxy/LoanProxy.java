@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Feign client to request the API Library loans endpoints
  */
-@FeignClient(url = "http://localhost:8080/api/loans", name = "loan-api")
+@FeignClient(url = "${app.apiUrl}/loans", name = "loan-api")
 public interface LoanProxy {
 
     @GetMapping("/ended")

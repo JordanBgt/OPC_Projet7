@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * Feign client to request the API Library documents endpoints
  */
-@FeignClient(url = "http://localhost:8080/api/documents", name = "document-api")
+@FeignClient(url = "${app.apiUrl}/documents", name = "document-api")
 public interface DocumentProxy {
 
     @GetMapping

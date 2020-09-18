@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 /**
  * Feign client to request the API Library authentication endpoints
  */
-@FeignClient(url = "http://localhost:8080/api/auth", name = "auth-api")
+@FeignClient(url = "${app.apiUrl}/auth", name = "auth-api")
 public interface AuthProxy {
 
     @PostMapping("/signin")
