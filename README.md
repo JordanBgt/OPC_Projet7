@@ -78,3 +78,10 @@ L'application est ensuite accessible à l'adresse suivante : `http://localhost:8
 | admin    | admin    | admin |
 | user1    | user1    | user  |
 | user2    | user2    | user  |
+
+## Déploiement sur un serveur Tomcat
+
+- Dans les projets Library-batch et Library-client : modifier la propriété `app.apiUrl` du fichier `application.properties` pour que l'url corresponde à celle du serveur
+- Exécuter la commande `mvn clean package` dans les projets `Library-batch` et `Library-client`, ainsi que dans le module `webapp` du projet `Library-api`
+- Copier les différents `war` générés dans le dossier `target` de ces projets/modules puis coller les dans le dossier `webapp` de tomcat
+- Démarrer Tomcat et l'application sera disponible à l'url configurée dans Tomcat + le nom du client. Par exemple : `localhost:8080/library-client-1.0.0`
