@@ -16,7 +16,7 @@
                 <form:input path="username" class="form-control" placeholder="Username" />
             </div>
             <div class="form-grou">
-                <form:input path="password" class="form-control" placeholder="Password" />
+                <form:input type="password" path="password" class="form-control" placeholder="Password" />
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-block login-form-btn">Se connecter</button>
